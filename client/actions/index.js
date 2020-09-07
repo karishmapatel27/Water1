@@ -1,5 +1,12 @@
-export const actionCreatorName = () => {
+// export const actionCreatorName = () => {
+//   return {
+//     type: 'ACTION_TYPE'
+//   }
+// }
+
+export const navigate = target => {
   return {
-    type: 'ACTION_TYPE'
+    type: 'NAVIGATE',
+    target // 'listing' or 'cart'
   }
 }
