@@ -3,15 +3,22 @@ import { connect } from 'react-redux'
 
 class CartListItem extends React.Component {
   render () {
+    console.log(this.props.cart[0])
     return (
         <>
-          <tr>
-            <td>HBIB Ginger Fusion</td>
-            <td><input className="update-input" value="3"/></td>
-            <td><button><span className="fa fa-trash fa-2x"></span></button></td>
-          </tr>
-          <tr>
-            <td>Mangose & Melons</td>
+
+            {this.props.cart.map(item => {
+              return (<tr key={item.id}>
+                <td >{item.name}</td>
+                <td><input className="update-input" value="1"/></td>
+                <td><button><span className="fa fa-trash fa-2x"></span></button></td>
+
+              </tr>)
+            })}
+            {/* <td>{this.props.cart[0].name}</td> */}
+
+          {/* <tr>
+            <td>{this.props.cart[1].name}</td>
             <td><input className="update-input" value="1"/></td>
             <td><button><span className="fa fa-trash fa-2x"></span></button></td>
           </tr>
@@ -19,7 +26,7 @@ class CartListItem extends React.Component {
             <td>North End Pilsner</td>
             <td><input className="update-input" value="2"/></td>
             <td><button><span className="fa fa-trash fa-2x"></span></button></td>
-          </tr>
+          </tr> */}
         </>
     )
   }

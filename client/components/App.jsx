@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import beers from '../../data/beers'
+import { navigate } from '../actions'
 
 import Header from './Header'
 import BeerList from './BeerList'
@@ -13,10 +14,11 @@ class App extends React.Component {
     <>
       <div className='app'>
         <Header/>
-        <BeerList beers={beers}/>
-        <Cart/>
-        {/* {this.props.navigation === 'listing' ? <Cart/>
-          : <BeerList beers ={beers}/>} */}
+        {/* <BeerList beers={beers}/>
+        <Cart/> */}
+        {this.props.navigation === 'listing' ? <BeerList beers ={beers}/>
+          : <Cart/>}
+        <button onClick={() => this.props.dispatch(navigate('lising')) }>listing</button>
       </div>
     </>
     )
