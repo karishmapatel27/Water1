@@ -1,14 +1,9 @@
-const navigation = (state = [], action) => {
+export const NAVIGATE = 'NAVIGATE'
+
+const navigation = (state = 'listing', action) => {
   switch (action.type) {
     case 'NAVIGATE':
-      return [
-        ...state,
-        {
-          id: action.id,
-          word: action.word
-        }
-      ]
-
+      return action.target
     default:
       return state
   }
