@@ -7,6 +7,14 @@
 export const navigate = target => {
   return {
     type: 'NAVIGATE',
-    target: 'listing'
+    target
+  }
+}
+
+export const addToCart = (id, name) => {
+  return {
+    type: 'ADD_TO_CART',
+    id,
+    name
   }
 }

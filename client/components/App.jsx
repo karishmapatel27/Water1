@@ -8,13 +8,15 @@ import Cart from './Cart'
 
 class App extends React.Component {
   render () {
-    console.log(this.props)
+    console.log('this.props:', this.props.navigation)
     return (
     <>
       <div className='app'>
         <Header/>
-        {this.props.navigation === 'listing' ? <BeerList beers ={beers}/>
-          : <Cart/>}
+        <BeerList beers={beers}/>
+        <Cart/>
+        {/* {this.props.navigation === 'listing' ? <Cart/>
+          : <BeerList beers ={beers}/>} */}
       </div>
     </>
     )
@@ -22,7 +24,7 @@ class App extends React.Component {
 }
 
 const mapStatetoProps = (state) => {
-  console.log(state)
+  console.log('state:', state)
   return {
     navigation: state.navigation
   }
