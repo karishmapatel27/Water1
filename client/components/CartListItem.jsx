@@ -15,18 +15,7 @@ class CartListItem extends React.Component {
 
               </tr>)
             })}
-            {/* <td>{this.props.cart[0].name}</td> */}
 
-          {/* <tr>
-            <td>{this.props.cart[1].name}</td>
-            <td><input className="update-input" value="1"/></td>
-            <td><button><span className="fa fa-trash fa-2x"></span></button></td>
-          </tr>
-          <tr>
-            <td>North End Pilsner</td>
-            <td><input className="update-input" value="2"/></td>
-            <td><button><span className="fa fa-trash fa-2x"></span></button></td>
-          </tr> */}
         </>
     )
   }

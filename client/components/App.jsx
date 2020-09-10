@@ -3,22 +3,25 @@ import { connect } from 'react-redux'
 import products from '../../data/beers'
 import { navigate } from '../actions'
 
+import { Route, Link } from 'react-router-dom'
+
 import Header from './Header'
 import BeerList from './BeerList'
 import Cart from './Cart'
+import ProductInformation from './ProductInformation'
 
 class App extends React.Component {
   render () {
-    console.log('this.props:', this.props.navigation)
     return (
     <>
       <div className='app'>
         <Header/>
-        {/* <BeerList beers={beers}/>
-        <Cart/> */}
-        {this.props.navigation === 'listing' ? <BeerList products ={products}/>
-          : <Cart/>}
-        <button onClick={() => this.props.dispatch(navigate('lising')) }>listing</button>
+        {/* {this.props.navigation === 'listing' ? <BeerList products ={products}/>
+          : <Cart/>} */}
+        {/* <button onClick={() => this.props.dispatch(navigate('lising')) }>listing</button> */}
+        <Route exact path="/" component={BeerList}></Route>
+
+        <Route path="/productInformation" component={ProductInformation}></Route>
       </div>
     </>
     )
