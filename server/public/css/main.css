@@ -1,0 +1,15 @@
+.body {
+  margin:0
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgb(58, 158, 240);
+  color: white;
+  font-size: 70px;
+}
+
+.content {
+  text-align: center;
+}

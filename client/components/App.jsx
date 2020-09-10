@@ -9,13 +9,15 @@ import Cart from './Cart'
 
 class App extends React.Component {
   render () {
-    console.log('this.props:', this.props.navigation)
     return (
     <>
-      <div className='app'>
+      <div
+        className="body">
+      </div>
+      <div> <h2 className="header"> Covid Goods </h2>
         <Header/>
-        {/* <BeerList beers={beers}/>
-        <Cart/> */}
+      </div>
+      <div className='content'>
         {this.props.navigation === 'listing' ? <BeerList products ={products}/>
           : <Cart/>}
         <button onClick={() => this.props.dispatch(navigate('lising')) }>listing</button>
