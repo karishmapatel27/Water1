@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import beers from '../../data/beers'
+import products from '../../data/beers'
 import { navigate } from '../actions'
 
 import Header from './Header'
@@ -16,7 +16,7 @@ class App extends React.Component {
         <Header/>
         {/* <BeerList beers={beers}/>
         <Cart/> */}
-        {this.props.navigation === 'listing' ? <BeerList beers ={beers}/>
+        {this.props.navigation === 'listing' ? <BeerList products ={products}/>
           : <Cart/>}
         <button onClick={() => this.props.dispatch(navigate('lising')) }>listing</button>
       </div>

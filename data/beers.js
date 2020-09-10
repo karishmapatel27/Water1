@@ -1,103 +1,32 @@
-export default {
-  beers: [
-    {
-      id: 1,
-      name: 'HBIB Ginger Fusion',
-      brewery: 'Hawkes Bay Independent Brewery',
-      country: 'New Zealand',
-      style: 'Ginger Beer',
-      abv: '5%'
-    }, {
-      id: 2,
-      name: 'Mangose & Melons',
-      brewery: 'Baylands Brewery',
-      country: 'New Zealand',
-      style: 'Fruit Gose',
-      abv: '4%'
-    }, {
-      id: 3,
-      name: 'North End Pilsner',
-      brewery: 'North End Brewing',
-      country: 'New Zealand',
-      style: 'Pilsner',
-      abv: '5%'
-    }, {
-      id: 4,
-      name: 'Bach Brewing Kingtide IPA',
-      brewery: 'Bach Brewing',
-      country: 'New Zealand',
-      style: 'IPA',
-      abv: '7%'
-    }, {
-      id: 5,
-      name: 'Baylands Zythra APA',
-      brewery: 'Baylands Brewery',
-      country: 'New Zealand',
-      style: 'American Pale Ale',
-      abv: '6%'
-    }, {
-      id: 6,
-      name: 'Kereru Moonless Stout',
-      brewery: 'Kereru',
-      country: 'New Zealand',
-      style: 'Stout',
-      abv: '4.3%'
-    }, {
-      id: 7,
-      name: 'Zeffer Red Apple Cider',
-      brewery: 'Zeffer',
-      country: 'New Zealand',
-      style: 'Cider',
-      abv: '5.4%'
-    }, {
-      id: 8,
-      name: 'Round The Corner',
-      brewery: 'Outlier Cartel',
-      country: 'New Zealand',
-      style: 'IPA',
-      abv: '7.1%'
-    }, {
-      id: 9,
-      name: 'Good George Drop Hop Cider',
-      brewery: 'Good George',
-      country: 'New Zealand',
-      style: 'Hopped Cider',
-      abv: '5%'
-    }, {
-      id: 10,
-      name: 'Good George Lime and Hibiscus Gose',
-      brewery: 'Good George',
-      country: 'New Zealand',
-      style: 'Gose',
-      abv: '4.5%'
-    }, {
-      id: 11,
-      name: 'Liberty Sauvignon Bomb',
-      brewery: 'Liberty Brewing Co',
-      country: 'New Zealand',
-      style: 'NZ IPA',
-      abv: '7.2%'
-    }, {
-      id: 12,
-      name: 'Epic Apocalypse',
-      brewery: 'Epic Brewing Company',
-      country: 'New Zealand',
-      style: 'Black I.P.A',
-      abv: '6%'
-    }, {
-      id: 13,
-      name: 'Wild & Woolly Basilisk',
-      brewery: 'Wild & Woolly',
-      country: 'New Zealand',
-      style: 'Berliner Weisse',
-      abv: '2.5%'
-    }, {
-      id: 14,
-      name: 'HBIB Pure Brewed Lager',
-      brewery: 'Hawkes Bay Independent Brewery',
-      country: 'New Zealand',
-      style: 'Lager',
-      abv: '4%'
-    }
-  ]
-}
+export default { products: [
+  {
+    id: 1,
+    name: 'mask',
+    price: 3,
+    image: 'https://s3.amazonaws.com/protocols-files/public/fc9fa8fe3c4b76b388ce54ec9d6b0876ca2ef2e5fd251bb4daadb07095140737/b49udtje.png'
+  },
+  {
+    id: 2,
+    name: 'Hand Sanitizer',
+    price: 10,
+    image: 'https://media.gettyimages.com/vectors/sanitize-and-disinfect-hands-vector-id1221041058?s=2048x2048'
+  },
+  {
+    id: 3,
+    name: 'Hand Wash',
+    price: 8,
+    image: 'https://i.insider.com/57d85e9d077dccf2018b5941',
+    secondImage: 'https://media.gettyimages.com/vectors/black-and-white-washing-hands-vector-id1203067645?s=2048x2048'
+  },
+  {
+    id: 4,
+    name: 'Gloves',
+    price: 5,
+    image: 'https://oursafety.info/wp-content/uploads/2020/04/38_EN_WEARING-THE-GLOVES_17-04-2020-4.png'
+  },
+  {
+    id: 5,
+    name: 'Antibacterial Wipes',
+    price: 6,
+    image: 'https://media.gettyimages.com/vectors/disinfecting-wipes-coronavirus-covid19-icon-vector-id1216058170?s=2048x2048'
+  }] }

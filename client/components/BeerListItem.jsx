@@ -3,20 +3,11 @@ import { addToCart } from '../actions'
 import { connect } from 'react-redux'
 
 class BeerListItem extends React.Component {
-  // handleClick = () => {
-  //   this.props.dispatch(addToCart(this.props.beer.id, this.props.beer.name))
-  // }
-
   render () {
-    const { beer, dispatch } = this.props
+    const { product, dispatch } = this.props
     return (
         <>
-          <li>
-            {this.props.beer.name} <button onClick={() => dispatch(addToCart(beer.id, beer.name)) }>Add to Cart</button>
-            <br></br>
-            A {this.props.beer.style} from {this.props.beer.brewery}<br></br>
-            {this.props.beer.country} abv {this.props.beer.abv}
-          </li>
+          <div> <img src={this.props.product.image} style={{ height: '200px', weight: '200px' }}/>{this.props.product.name}<button onClick={() => dispatch(addToCart(product.id, product.name)) }>Add to Cart</button></div>
         </>
     )
   }

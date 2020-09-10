@@ -5,9 +5,9 @@ class BeerList extends React.Component {
   render () {
     return (
         <>
-          <ul>
-            {this.props.beers.beers.map(beer => (<BeerListItem key={beer.id} beer={beer}/>))}
-          </ul>
+          <div>
+            {this.props.products.products.map(product => (<BeerListItem key={product.id} product={product}/>))}
+          </div>
         </>
     )
   }
