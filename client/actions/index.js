@@ -18,3 +18,12 @@ export const addToCart = (id, name) => {
     name
   }
 }
+
+export const removeProduct = (id) => {
+  return {
+    type: 'REMOVE_PRODUCT',
+    id
+  }
+}
+
+
