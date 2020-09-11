@@ -86,9 +86,25 @@ input{
 .video{
   margin-top: 40px;
 
-
 }
+
+
+.productInfo{
+  margin-top: 40px;
+  padding: 20px;
+}
+
 .searchBar{
   flex-grow: 2;
+}
+
+.cartBtn{
+  margin-top: 30px;
+}
+
+
+button:hover {
+  background-color: #555555;
+  color: white;
 
 }
