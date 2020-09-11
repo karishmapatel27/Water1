@@ -29,6 +29,7 @@ a:visited{
 }
 .banner{
   width: 100%;
+  margin-top: 1rem;
 }
 .list{
   display:flex;
@@ -80,17 +81,14 @@ input{
   padding: 5px;
   margin: 5px;
   color: white;
-<<<<<<< HEAD
 }
 
 .video{
   margin-top: 40px;
-=======
 
 
 }
 .searchBar{
   flex-grow: 2;
 
->>>>>>> 833600424316bd6afc6f58870cae1d2700055b34
 }
