@@ -7,11 +7,16 @@ class Header extends React.Component {
     <>
       <div className="header">
         <Link to="/" style={{ textDecoration: 'none' }}> <h1> Covid Goods </h1></Link>
-        <input type="text" placeholder={'Search...'}/>
-        <Link to='/cart'>
-          <button>Cart</button>
-        </Link>
-        <button>Login</button>
+        <div className="searchBar">
+          <input type="text" placeholder={'Search...'}/><button><i className="fas fa-search"></i></button>
+
+        </div>
+        <div className="login">
+          <Link to='/cart'>
+            <button className="cartButton">Cart</button>
+          </Link>
+          <button>Login</button>
+        </div>
       </div>
     </>
     )

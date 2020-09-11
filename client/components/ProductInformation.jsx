@@ -17,7 +17,7 @@ class ProductInformation extends React.Component {
           <button onClick={() => this.props.dispatch(addToCart(this.props.location.id, this.props.location.name, this.props.location.price, this.props.location.image)) }>Add to Cart</button>
           <iframe width="560"
             height="315"
-            src='https://www.youtube.com/embed/77IZttD_pU8'
+            src={this.props.location.video}
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
