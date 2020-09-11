@@ -1,13 +1,23 @@
-* {
-  margin:0
-}
 
+
+*{
+  margin: 0;
+  padding: 0;
+}
 .header {
   padding: 10px;
   text-align: center;
   background: rgb(58, 158, 240);
-  color: white;
-  font-size: 70px;
+
+  display:flex;
+  justify-content: space-between;
+}
+h1{
+  color:red;
+  font-size: 30px;
+}
+.header input{
+
 }
 
 .content {
