@@ -15,7 +15,8 @@ class BeerListItem extends React.Component {
 				      name: this.props.product.name,
 				      price: this.props.product.price,
 				      video: this.props.product.video,
-				      id: this.props.product.id
+				      id: this.props.product.id,
+				      info: this.props.product.info
 				    }}
 				  >
 				    <img
