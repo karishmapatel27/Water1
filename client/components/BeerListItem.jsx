@@ -15,12 +15,13 @@ class BeerListItem extends React.Component {
 				      name: this.props.product.name,
 				      price: this.props.product.price,
 				      video: this.props.product.video,
-				      id: this.props.product.id
+				      id: this.props.product.id,
+				      info: this.props.product.info
 				    }}
 				  >
 				    <img
 				      src={this.props.product.image}
-				      style={{ height: '200px', weight: '200px' }}
+				      style={{ height: '250px', width: '250px' }}
 				    />
 				  </Link>
 				  <h3><a href="">{this.props.product.name}</a></h3>

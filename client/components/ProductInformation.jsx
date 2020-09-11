@@ -9,6 +9,7 @@ class ProductInformation extends React.Component {
 
     return (
 
+
       <>
         <div>
           <h2 className='itemName'>{this.props.location.name}</h2>
@@ -27,6 +28,7 @@ class ProductInformation extends React.Component {
           </iframe>
         </div>
       </>
+
 
     )
   }
