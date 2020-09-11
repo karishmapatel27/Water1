@@ -12,8 +12,10 @@ class BeerListItem extends React.Component {
             pathname: '/productInformation',
             image: this.props.product.image,
             name: this.props.product.name,
-            price: this.props.product.price
-          }}><img src={this.props.product.image} style={{ height: '200px', weight: '200px' }}/></Link>{this.props.product.name}</div>
+            price: this.props.product.price,
+            video: this.props.product.video
+          }}><img src={this.props.product.image} style={{ height: '200px', weight: '200px' }}/></Link>{this.props.product.name}
+          </div>
         </>
     )
   }
