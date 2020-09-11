@@ -35,6 +35,8 @@ a:visited{
   border: solid 1px lightgray;
   margin: 1rem;
 }
+
+
 .cartButton{
   margin-right: 0.3rem
 }
@@ -46,14 +48,39 @@ input{
   width: 70%;
 }
 
+
 .content {
   text-align: center;
-  max-width: 1280px;
-  padding: 0 1.5rem;
+  max-width: 1000px;
+  padding: 0 3rem;
   margin: auto;
   overflow: hidden;
 
 }
+
+.cart{
+  display: flex; 
+  margin-top: 60px
+}
+
+.price{
+  color:orange;
+}
+
+.itemName{
+  color:blue;
+}
+
+.btn{
+  background-color: rgb(58, 158, 240);
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+
+
+}
 .searchBar{
   flex-grow: 2;
+
 }
