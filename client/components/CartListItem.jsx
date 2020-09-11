@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { removeProduct } from '../actions'
 
 class CartListItem extends React.Component {
-  render() {
+  render () {
     return (
       <>
 
@@ -18,7 +18,7 @@ class CartListItem extends React.Component {
             <button className="btn" onClick={() => this.props.dispatch(removeProduct(item.id))}>Delete</button>
           </div>)
         })}
-
+        <button className="btn">Checkout now</button>
       </>
     )
   }
