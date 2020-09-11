@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 class BeerListItem extends React.Component {
+
 	render() {
 		return (
 			<>
@@ -15,6 +16,7 @@ class BeerListItem extends React.Component {
 							image: this.props.product.image,
 							name: this.props.product.name,
 							price: this.props.product.price,
+                       video: this.props.product.video
 						}}
 					>
 						<img
@@ -27,6 +29,7 @@ class BeerListItem extends React.Component {
 			</>
 		);
 	}
+
 }
 
 export default connect()(BeerListItem);
