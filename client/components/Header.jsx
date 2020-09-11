@@ -9,6 +9,7 @@ class Header extends React.Component {
 				<Link to='/cart'>
 					<button>Cart</button>
 				</Link>
+				<button>Login</button>
 			</>
 		);
 	}
