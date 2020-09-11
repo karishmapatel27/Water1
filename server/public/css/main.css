@@ -17,9 +17,23 @@ h1{
   font-size: 30px;
   
 }
+a{
+  text-decoration: none;
+}
+p{
+  color:orange;
+}
+a:visited{
+  text-decoration: none;
+  color:blue;
+}
 .list{
   display:flex;
   flex-wrap: wrap;
+}
+.listItem{
+
+  margin: 1rem;
 }
 .header input{
 
@@ -27,4 +41,8 @@ h1{
 
 .content {
   text-align: center;
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
 }

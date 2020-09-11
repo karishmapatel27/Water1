@@ -23,8 +23,8 @@ class BeerListItem extends React.Component {
 				      style={{ height: '200px', weight: '200px' }}
 				    />
 				  </Link>
-				  <h3>{this.props.product.name}</h3>
-				   ${this.props.product.price}
+				  <h3><a href="">{this.props.product.name}</a></h3>
+				   <p>${this.props.product.price}.00</p>
 				</div>
 			</>
     )
