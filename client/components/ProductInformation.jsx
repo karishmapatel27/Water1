@@ -2,7 +2,7 @@ import React from 'react'
 import { addToCart } from '../actions'
 import { connect } from 'react-redux'
 import { Route, Link } from 'react-router-dom'
-import { removeProduct } from '../actions'
+
 
 class ProductInformation extends React.Component {
   render() {
