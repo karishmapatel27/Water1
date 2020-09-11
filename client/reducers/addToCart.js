@@ -8,6 +8,8 @@ const addToCart = (state = [], action) => {
         {
           id: action.id,
           name: action.name,
+          image: action.image,
+          price: action.price,
           quantity: '1'
         }
       ]

@@ -7,7 +7,7 @@ class BeerList extends React.Component {
     console.log(this.props)
     return (
         <>
-          <div>
+          <div className="list">
             {products.products.map(product => (<BeerListItem key={product.id} product={product}/>))}
           </div>
         </>
