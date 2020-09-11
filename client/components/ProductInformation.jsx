@@ -9,7 +9,7 @@ class ProductInformation extends React.Component {
 
     return (
         <>
-          <h1>{this.props.location.name}</h1>
+          <h2>{this.props.location.name}</h2>
           <img src={this.props.location.image} style={{ height: '200px', weight: '200px' }}/>
           <h2>${this.props.location.price}</h2>
           <Link to="/"><button>Home</button></Link>

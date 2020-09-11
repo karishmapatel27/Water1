@@ -4,7 +4,10 @@ class Header extends React.Component {
   render () {
     return (
     <>
-    <input type="text" placeholder={'Search...'}/>
+    <div className="header">
+      <h1 > Covid Goods </h1>
+      <input type="text" placeholder={'Search...'}/>
+    </div>
     </>
     )
   }
