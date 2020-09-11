@@ -1,13 +1,25 @@
-import React from 'react'
+import React from 'react';
+import { Link, Router } from 'react-router-dom';
 
 class Header extends React.Component {
+
+			
+	
   render () {
     return (
     <>
-    <input type="text" placeholder={'Search...'}/>
+      <div className="header">
+        <h1 > Covid Goods </h1>
+        <input type="text" placeholder={'Search...'}/>
+          <Link to='/cart'>
+            <button>Cart</button>
+          </Link>
+          <button>Login</button>
+      </div>
     </>
     )
   }
+
 }
 
-export default Header
+export default Header;
