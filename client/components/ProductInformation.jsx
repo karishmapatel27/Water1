@@ -9,6 +9,7 @@ class ProductInformation extends React.Component {
 
     return (
 
+
       <>
         <h2 className='itemName'>{this.props.location.name}</h2>
         <img src={this.props.location.image} style={{ height: '200px', weight: '200px' }} />
@@ -23,6 +24,7 @@ class ProductInformation extends React.Component {
           allowfullscreen>
         </iframe>
       </>
+
 
     )
   }
