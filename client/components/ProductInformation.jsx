@@ -13,6 +13,7 @@ class ProductInformation extends React.Component {
           <h2>{this.props.location.name}</h2>
           <img src={this.props.location.image} style={{ height: '200px', weight: '200px' }}/>
           <h2>${this.props.location.price}</h2>
+          <p>{this.props.location.info}</p>
           <Link to="/"><button>Home</button></Link>
           <button onClick={() => this.props.dispatch(addToCart(this.props.location.id, this.props.location.name, this.props.location.price, this.props.location.image)) }>Add to Cart</button>
           <iframe width="560"
