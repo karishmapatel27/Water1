@@ -4,18 +4,11 @@ import CartListItem from './CartListItem.jsx'
 class Cart extends React.Component {
   render () {
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>Beer</th>
-            <th>Quantity</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          <CartListItem/>
-        </tbody>
-      </table>
+      <div className="cart">
+
+        <CartListItem/>
+      </div>
+
     )
   }
 }

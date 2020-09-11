@@ -3,18 +3,20 @@ import { connect } from 'react-redux'
 import { removeProduct } from '../actions'
 
 class CartListItem extends React.Component {
-  render() {
-    console.log(this.props.cart[0])
+  render () {
     return (
       <>
 
         {this.props.cart.map(item => {
-          return (<tr key={item.id}>
-            <td >{item.name}</td>
-            <td><input className="update-input" value="1" /></td>
-            <td><button><span className="fa fa-trash fa-2x"></span></button></td>
-            <button onClick={() => this.props.dispatch(removeProduct(this.props.product.id))}>Delete</button>
-          </tr>)
+          return (<div key={item.id}>
+
+            <h2>{item.name}</h2>
+            <img src={item.image} style={{ height: '200px', weight: '200px' }} />
+            <h2>${item.price}</h2>
+            <input className="update-input" value="1" />
+
+            <button onClick={() => this.props.dispatch(removeProduct(item.id))}>Delete</button>
+          </div>)
         })}
 
       </>

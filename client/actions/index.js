@@ -11,11 +11,13 @@ export const navigate = target => {
   }
 }
 
-export const addToCart = (id, name) => {
+export const addToCart = (id, name, price, image) => {
   return {
     type: 'ADD_TO_CART',
     id,
-    name
+    name,
+    price,
+    image
   }
 }
 
@@ -25,5 +27,3 @@ export const removeProduct = (id) => {
     id
   }
 }
-
-

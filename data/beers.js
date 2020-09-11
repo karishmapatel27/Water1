@@ -2,7 +2,7 @@ export default {
   products: [
     {
       id: 1,
-      name: 'mask',
+      name: 'Face mask',
       price: 3,
       // image: 'https://s3.amazonaws.com/protocols-files/public/fc9fa8fe3c4b76b388ce54ec9d6b0876ca2ef2e5fd251bb4daadb07095140737/b49udtje.png'
       image: 'https://images-na.ssl-images-amazon.com/images/I/61MQy3POZOL._SL1000_.jpg'
